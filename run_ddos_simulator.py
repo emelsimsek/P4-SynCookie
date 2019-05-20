@@ -77,12 +77,12 @@ class ExerciseTopo(Topo):
         host_ip = "10.0.1.1"
         host_mac = '00:00:00:00:01:01' 
 	self.addHost("c1", ip=host_ip+'/24', mac=host_mac)
-	self.addLink("c1", "dm", 0, 1)
+	self.addLink("c1", "s1", 0, 1)
 
 	host_ip = "10.0.2.2"
         host_mac = '00:00:00:02:02:00'
         self.addHost("srv", ip=host_ip+'/24', mac=host_mac)
-        self.addLink("srv", "dm", 0, 2)
+        self.addLink("srv", "s1", 0, 2)
 
 class ExerciseRunner:
     """
