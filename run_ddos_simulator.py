@@ -209,7 +209,7 @@ class ExerciseRunner:
             P4Runtime, depending if any command or runtime JSON files were
             provided for the switches.
         """
-           self.program_switch_p4runtime("dm", "dm-runtime.json")
+        self.program_switch_p4runtime("dm", "dm-runtime.json")
 
     def program_hosts(self):
         """ Adds static ARP entries and default routes to each mininet host.
